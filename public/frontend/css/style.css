@@ -881,7 +881,7 @@ ul.list-style li:last-child {
   }
 }
 .menu > .nav-item + .nav-item {
-  margin-left: 55px;
+  margin-left: 30px;
 }
 
 .nav_btn {
@@ -1149,7 +1149,7 @@ ul.list-style li:last-child {
   }
 }
 .navbar_fixed.menu_two + div, .navbar_fixed.menu_two + section {
-  margin-top: 86px;
+  margin-top: 0px;
 }
 .navbar_fixed .menu_toggle .hamburger span, .navbar_fixed .menu_toggle .hamburger-cross span {
   background: #1d2746;
@@ -1638,7 +1638,7 @@ ul.list-style li:last-child {
 /*=========== End doc_banner_area_two css ============*/
 /*=========== Start Banner Support ============*/
 .kbDoc-banner-support {
-  height: 945px;
+  /* height: 945px; */
   background-image: linear-gradient(30deg, #feefec 0%, #f5fdff 100%);
   padding: 200px 0;
   position: relative;
@@ -1655,7 +1655,7 @@ ul.list-style li:last-child {
   }
 }
 .kbDoc-banner-support .banner-content-wrapper {
-  max-width: 770px;
+  max-width: 800px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
@@ -5151,7 +5151,7 @@ body:not(.onepage-doc) .body_fixed #font-switcher {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .communities {
-  padding: 115px 0 90px;
+  padding: 0px 0 0px;
 }
 
 .community-box {
