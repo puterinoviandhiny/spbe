@@ -38,7 +38,7 @@
     @stack('styles')
 </head>
 
-<body data-scroll-animation="true">
+<body data-spy="scroll" data-offset="86" data-scroll-animation="true">
         <div id="preloader">
             <div id="ctn-preloader" class="ctn-preloader">
                 <div class="round_spinner">

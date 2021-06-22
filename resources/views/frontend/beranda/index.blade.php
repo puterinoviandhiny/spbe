@@ -313,24 +313,25 @@
     <div class="container">
         <div class="section_title text-center">
             <h2 class="h_title wow fadeInUp">
-                KbDoc top community posts
+                Tanya Jawab Seputar SPBE
             </h2>
-
-            <p class="wow fadeInUp" data-wow-delay="0.3s">
+            <!--p class="wow fadeInUp" data-wow-delay="0.3s">
                 Me old mucker chimney pot bodge so I said Oxford my lady show off show off
                 pick your nose and blow off cack cheesed.!
-            </p>
+            </p!-->
         </div>
 
         <div class="community-posts-wrapper">
+            @foreach ($tanya as $question)
             <div class="community-post wow fadeInUp" data-wow-delay="0.5s">
+
                 <div class="post-content">
                     <div class="author-avatar">
-                        <img src="img/home_support/cp1.png" alt="community post">
+                        <img src="{{ asset('frontend/img/home_support/cp1.png') }}" alt="community post">
                     </div>
                     <div class="entry-content">
-                        <h3 class="post-title"><a href="forum-single.html">Con no longer save outlook emails to KbDoc</a></h3>
-                        <p>updated by: robynphd 2 days ago</p>
+                        <h3 class="post-title"><a href="{{ url('tanyajawab/'.$question->id )}}">{{ str_limit($question->judul, $limit = 60, $end = '...') }}</a></h3>
+                        <p>{{ $question->created_at }}</p>
                     </div>
                 </div>
                 <div class="post-meta-wrapper">
@@ -340,119 +341,16 @@
                         <li><a href="#"><i class="icon_like_alt"></i>5</a></li>
                     </ul>
                 </div>
-            </div>
-            <!-- /.community-post -->
 
-            <div class="community-post wow fadeInUp" data-wow-delay="0.6s">
-                <div class="post-content">
-                    <div class="author-avatar">
-                        <img src="img/home_support/cp2.jpg" alt="community post">
-                    </div>
-                    <div class="entry-content">
-                        <h3 class="post-title"><a href="forum-single.html">Connection timeouts</a></h3>
-                        <p>updated by: Hilary ouse 11 days ago</p>
-                    </div>
-                </div>
-                <div class="post-meta-wrapper">
-                    <ul class="post-meta-info">
-                        <li><a href="#"><i class="fas fa-eye"></i>478</a></li>
-                        <li><a href="#"><i class="icon_chat_alt"></i>20</a></li>
-                        <li><a href="#"><i class="icon_like_alt"></i>5</a></li>
-                    </ul>
-                </div>
             </div>
+            @endforeach
             <!-- /.community-post -->
-
-            <div class="community-post wow fadeInUp" data-wow-delay="0.7s">
-                <div class="post-content">
-                    <div class="author-avatar">
-                        <img src="img/home_support/cp3.jpg" alt="community post">
-                    </div>
-                    <div class="entry-content">
-                        <h3 class="post-title"><a href="forum-single.html">KbDoc full (need help)</a></h3>
-                        <p>updated by: Weir doe 3 days ago</p>
-                    </div>
-                </div>
-                <div class="post-meta-wrapper">
-                    <ul class="post-meta-info">
-                        <li><a href="#"><i class="fas fa-eye"></i>478</a></li>
-                        <li><a href="#"><i class="icon_chat_alt"></i>20</a></li>
-                        <li><a href="#"><i class="icon_like_alt"></i>5</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- /.community-post -->
-
-            <div class="community-post wow fadeInUp" data-wow-delay="0.8s">
-                <div class="post-content">
-                    <div class="author-avatar">
-                        <img src="img/home_support/cp4.jpg" alt="community post">
-                    </div>
-                    <div class="entry-content">
-                        <h3 class="post-title">
-                            <a href="forum-single.html">Syncing is stuck on a mac .What could be the culprit herh</a>
-                        </h3>
-                        <p>updated by: Jake weary 5 days ago</p>
-                    </div>
-                </div>
-                <div class="post-meta-wrapper">
-                    <ul class="post-meta-info">
-                        <li><a href="#"><i class="fas fa-eye"></i>478</a></li>
-                        <li><a href="#"><i class="icon_chat_alt"></i>20</a></li>
-                        <li><a href="#"><i class="icon_like_alt"></i>5</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- /.community-post -->
-
-            <div class="community-post wow fadeInUp" data-wow-delay="1s">
-                <div class="post-content">
-                    <div class="author-avatar">
-                        <img src="img/home_support/cp5.jpg" alt="community post">
-                    </div>
-                    <div class="entry-content">
-                        <h3 class="post-title">
-                            <a href="forum-single.html">KbDoc application keeps crashing at starting mojave 10.14.6</a>
-                        </h3>
-                        <p>updated by: Jason response 2 days ago</p>
-                    </div>
-                </div>
-                <div class="post-meta-wrapper">
-                    <ul class="post-meta-info">
-                        <li><a href="#"><i class="fas fa-eye"></i>478</a></li>
-                        <li><a href="#"><i class="icon_chat_alt"></i>20</a></li>
-                        <li><a href="#"><i class="icon_like_alt"></i>5</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- /.community-post -->
-
-            <div class="community-post wow fadeInUp" data-wow-delay="1.1s">
-                <div class="post-content">
-                    <div class="author-avatar">
-                        <img src="img/home_support/cp6.jpg" alt="community post">
-                    </div>
-                    <div class="entry-content">
-                        <h3 class="post-title"><a href="forum-single.html">Customizing Certificates</a></h3>
-                        <p>updated by: Miles tone 7 days ago</p>
-                    </div>
-                </div>
-                <div class="post-meta-wrapper">
-                    <ul class="post-meta-info">
-                        <li><a href="#"><i class="fas fa-eye"></i>478</a></li>
-                        <li><a href="#"><i class="icon_chat_alt"></i>20</a></li>
-                        <li><a href="#"><i class="icon_like_alt"></i>5</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- /.community-post -->
-
         </div>
         <!-- /.community-posts-wrapper -->
 
         <div class="button-container text-center">
-            <a href="#" class="doc_border_btn btn-round border-light all_doc_btn wow fadeInUp animated">
-                All sestems currently operational
+            <a href="{{ route('frontend.qna') }}" class="doc_border_btn btn-round border-light all_doc_btn wow fadeInUp animated">
+                Lihat pertanyaan lainnya
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="11px">
                     <path fill-rule="evenodd"  fill="rgb(16, 179, 214)"  d="M13.034,0.006 L12.323,0.738 L15.227,4.980 L-0.000,4.981 L-0.000,6.015 L15.227,6.015 L12.323,10.258 L13.034,10.990 L18.000,5.864 L18.000,5.131 L13.034,0.006 Z"/>
                </svg>
@@ -471,10 +369,10 @@
             <img src="{{ asset('frontend/img/home_support/com_sm.png') }}" alt="community">
 
             <h2 class="title-lg wow fadeInUp">
-                New to Communities?
+                Punya Pertanyaan Seputar SPBE?
             </h2>
 
-            <a href="#" class="action_btn wow fadeInUp" data-wow-delay="0.3s">Join the community <i class="arrow_right"></i></a>
+            <a href="{{ route('frontend.qna.tanya') }}" class="action_btn wow fadeInUp" data-wow-delay="0.3s"> Tanya Kami <i class="arrow_right"></i></a>
         </div>
         <!-- /.row -->
     </div>

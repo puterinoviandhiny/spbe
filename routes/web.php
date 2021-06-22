@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\frontend\berandaController;
+use App\Http\Controllers\frontend\qnaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +18,9 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 Route::get('/', [berandaController::class, 'index'])->name('frontend.beranda');
-
+Route::get('/tanyajawab', [qnaController::class, 'index'])->name('frontend.qna');
+Route::get('/tanyajawab/{id}', [qnaController::class, 'show'])->name('frontend.qna.pertanyaan');
+Route::get('/tanya', [qnaController::class, 'tanya'])->name('frontend.qna.tanya');
+Route::post('/tanyaaction', [qnaController::class, 'store'])->name('frontend.qna.store');
 
 
