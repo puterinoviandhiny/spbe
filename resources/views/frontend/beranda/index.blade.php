@@ -1,313 +1,104 @@
 @extends('frontend.layouts.app')
 @section('title', 'Beranda')
 @section('main-content')
-<section class="kbDoc-banner-support">
-    <div class="banner-content text-center">
-        <div class="banner-content-wrapper">
-            <h1 class="banner-title wow fadeInUp">Sistem Pemerintahan Berbasis Elektonik</h1>
-            <p class="banner-description wow fadeInUp" data-wow-delay="0.3s">
-                Find answers, ask questions, and connect with our community of KbDoc users<br> from around the
-                world.
-            </p>
-            <div class="banner-search-form-wrapper wow fadeInUp" data-wow-delay="0.5s">
-                <form action="#" class="banner-search-form">
-                    <input type="text" placeholder="Search or ask a question..">
-                    <button type="submit"><i class="icon_search"></i></button>
-                </form>
-                <!-- /.banner-search-form -->
-            </div>
-            <!-- /.banner-search-form-wrapper -->
+<section class="doc_banner_area_two">
+    <div class="b_plus one" data-parallax='{"x": 250, "y": 160, "rotateZ":500}'><img src="{{ asset('frontend/img/home_two/plus.png') }}"
+                                                                                     alt=""></div>
+    <div class="b_plus two" data-parallax='{"x": 250, "y": 260, "rotateZ":500}'><img src="{{ asset('frontend/img/home_two/plus_one.png') }}"
+                                                                                     alt=""></div>
+    <div class="b_round r_one" data-parallax='{"x": 0, "y": 100, "rotateZ":0}'></div>
+    <div class="b_round r_two" data-parallax='{"x": -10, "y": 80, "rotateY":0}'></div>
+    <div class="b_round r_three"></div>
+    <div class="b_round r_four"></div>
+    <img class="p_absolute building_img" src="{{ asset('frontend/img/home_two/building.png') }}" alt="">
+    <img class="p_absolute table_img wow fadeInLeft" src="{{ asset('frontend/img/home_two/table.svg') }}" alt="">
+    <img class="p_absolute flower wow fadeInUp" data-wow-delay="0.6s" src="{{ asset('frontend/img/home_two/flower.png') }}" alt="">
+    <img class="p_absolute bord wow fadeInRight" data-wow-delay="0.4s" src="{{ asset('frontend/img/home_two/bord.png') }}" alt="">
+    <img class="p_absolute girl wow fadeInRight" data-wow-delay="0.8s" src="{{ asset('frontend/img/home_two/girl.png') }}" alt="">
+    <div class="container">
+        <div class="doc_banner_text_two text-center">
+            <h2>Sistem Pemerintahan Berbasis Elektonik</h2>
+            <!--p>KnowAll is a fully featured knowledge base theme for WordPress.</p!-->
+            <form action="#" class="banner_search_form">
+                <input type="search" class="form-control" placeholder="Search the Knowledge Base">
+                <button type="submit" class="search_btn">Search</button>
+            </form>
         </div>
-        <!-- /.banner-content-wrapper -->
-    </div>
-    <!-- /.banner-content -->
-    <div class="bottom-shape">
-        <img src="{{ asset('frontend/img/home_support/banner-bottom-shape.png') }}" alt="banner">
     </div>
 </section>
 <!-- /.kbDoc-banner-support -->
+
 
 <section class="related-communities">
     <div class="container">
         <div class="section_title text-center">
             <h2 class="h_title wow fadeInUp">
-                Select your product to find<br>
-                Related communities
+                Selamat Datang di Website Resmi SPBE
             </h2>
         </div>
 
-        <div class="communities-boxes">
-            <div class="kbDoc-com-box wow fadeInRight" data-wow-delay="0.5s">
-                <div class="icon-container">
-                    <img src="img/home_support/rc1.png" alt="communinity-box">
-                </div>
-                <div class="kbDoc-com-box-content">
-                    <h3 class="title"><a href="forums.html"> Getting Started</a></h3>
-                    <p class="total-post">453 Posts</p>
-                </div>
-                <!-- /.kbDoc-com-box-content -->
-            </div>
-            <!-- /.kbDoc-com-box -->
+            <div class="communities-boxes">
 
-            <div class="kbDoc-com-box wow fadeInRight" data-wow-delay="0.7s">
-                <div class="icon-container">
-                    <img src="img/home_support/rc2.png" alt="communinity-box">
+                <div class="kbDoc-com-box wow fadeInRight" data-wow-delay="0.5s">
+                    <div class="icon-container">
+                        <img src="{{ asset('frontend/img/home_support/038.png') }}" alt="communinity-box" height="70px">
+                    </div>
+                    <div class="kbDoc-com-box-content">
+                        <h3 class="title"><a href="#">Peraturan & Kebijakan</a></h3>
+                    </div>
+                    <!-- /.kbDoc-com-box-content -->
                 </div>
-                <div class="kbDoc-com-box-content">
-                    <h3 class="title"><a href="#"> Integrations</a></h3>
-                    <p class="total-post">624 Posts</p>
-                </div>
-                <!-- /.kbDoc-com-box-content -->
-            </div>
-            <!-- /.kbDoc-com-box -->
+                <!-- /.kbDoc-com-box -->
 
-            <div class="kbDoc-com-box wow fadeInRight" data-wow-delay="0.9s">
-                <div class="icon-container">
-                    <img src="img/home_support/rc3.png" alt="communinity-box">
+                <div class="kbDoc-com-box wow fadeInRight" data-wow-delay="0.7s">
+                    <div class="icon-container">
+                        <img src="{{ asset('frontend/img/home_support/039.png') }}" alt="communinity-box" height="70px">
+                    </div>
+                    <div class="kbDoc-com-box-content">
+                        <h3 class="title"><a href="forums.html">SOP</a></h3>
+                    </div>
+                    <!-- /.kbDoc-com-box-content -->
                 </div>
-                <div class="kbDoc-com-box-content">
-                    <h3 class="title"><a href="forums.html"> Solar System</a></h3>
-                    <p class="total-post">120 Posts</p>
-                </div>
-                <!-- /.kbDoc-com-box-content -->
-            </div>
-            <!-- /.kbDoc-com-box -->
+                <!-- /.kbDoc-com-box -->
 
-            <div class="kbDoc-com-box wow fadeInRight" data-wow-delay="1.1s">
-                <div class="icon-container">
-                    <img src="img/home_support/rc4.png" alt="communinity-box">
+                <div class="kbDoc-com-box wow fadeInRight" data-wow-delay="0.9s">
+                    <div class="icon-container">
+                        <img src="{{ asset('frontend/img/home_support/029.png') }}" alt="communinity-box" height="70px">
+                    </div>
+                    <div class="kbDoc-com-box-content">
+                        <h3 class="title"><a href="forums.html">Rencana Strategis</a></h3>
+                    </div>
+                    <!-- /.kbDoc-com-box-content -->
                 </div>
-                <div class="kbDoc-com-box-content">
-                    <h3 class="title"><a href="forums.html"> Cloud Server</a></h3>
-                    <p class="total-post">235 Posts</p>
-                </div>
-                <!-- /.kbDoc-com-box-content -->
-            </div>
-            <!-- /.kbDoc-com-box -->
+                <!-- /.kbDoc-com-box -->
 
-            <div class="kbDoc-com-box wow fadeInRight" data-wow-delay="1.3s">
-                <div class="icon-container">
-                    <img src="img/home_support/rc5.png" alt="communinity-box">
+                <div class="kbDoc-com-box wow fadeInRight" data-wow-delay="1.1s">
+                    <div class="icon-container">
+                        <img src="{{ asset('frontend/img/home_support/006.png') }}" alt="communinity-box" height="70px">
+                    </div>
+                    <div class="kbDoc-com-box-content">
+                        <h3 class="title"><a href="forums.html">Tujuan & Sasaran</a></h3>
+                    </div>
+                    <!-- /.kbDoc-com-box-content -->
                 </div>
-                <div class="kbDoc-com-box-content">
-                    <h3 class="title"><a href="forums.html"> Integrate Quickly</a></h3>
-                    <p class="total-post">542 Posts</p>
-                </div>
-                <!-- /.kbDoc-com-box-content -->
-            </div>
-            <!-- /.kbDoc-com-box -->
+                <!-- /.kbDoc-com-box -->
 
+                <div class="kbDoc-com-box wow fadeInRight" data-wow-delay="1.3s">
+                    <div class="icon-container">
+                        <img src="{{ asset('frontend/img/home_support/033.png') }}" alt="communinity-box" height="70px">
+                    </div>
+                    <div class="kbDoc-com-box-content">
+                        <h3 class="title"><a href="forums.html">Visi & Misi TIK</a></h3>
+                    </div>
+                    <!-- /.kbDoc-com-box-content -->
+                </div>
+                <!-- /.kbDoc-com-box -->
+
+            </div>
         </div>
-        <!-- /.communities-boxes -->
-
-
-        <div class="more-communities">
-
-            <a href="#more-category" class="collapse-btn">More Communities <i class="icon_plus"></i></a>
-
-            <div class="collapse-wrap" id="more-category">
-                <div class="communities-boxes">
-                    <div class="kbDoc-com-box">
-                        <div class="icon-container">
-                            <img src="img/home_support/rc6.png" alt="communinity-box">
-                        </div>
-                        <div class="kbDoc-com-box-content">
-                            <h3 class="title"><a href="forums.html">Deployment</a></h3>
-                            <p class="total-post">453 Posts</p>
-                        </div>
-                        <!-- /.kbDoc-com-box-content -->
-                    </div>
-                    <!-- /.kbDoc-com-box -->
-
-                    <div class="kbDoc-com-box">
-                        <div class="icon-container">
-                            <img src="img/home_support/rc7.png" alt="communinity-box">
-                        </div>
-                        <div class="kbDoc-com-box-content">
-                            <h3 class="title"><a href="forums.html">Configuration</a></h3>
-                            <p class="total-post">624 Posts</p>
-                        </div>
-                        <!-- /.kbDoc-com-box-content -->
-                    </div>
-                    <!-- /.kbDoc-com-box -->
-
-                    <div class="kbDoc-com-box">
-                        <div class="icon-container">
-                            <img src="img/home_support/rc8.png" alt="communinity-box">
-                        </div>
-                        <div class="kbDoc-com-box-content">
-                            <h3 class="title"><a href="forums.html">App Management</a></h3>
-                            <p class="total-post">120 Posts</p>
-                        </div>
-                        <!-- /.kbDoc-com-box-content -->
-                    </div>
-                    <!-- /.kbDoc-com-box -->
-
-                    <div class="kbDoc-com-box">
-                        <div class="icon-container">
-                            <img src="img/home_support/rc9.png" alt="communinity-box">
-                        </div>
-                        <div class="kbDoc-com-box-content">
-                            <h3 class="title"><a href="forums.html">Marketplaces</a></h3>
-                            <p class="total-post">235 Posts</p>
-                        </div>
-                        <!-- /.kbDoc-com-box-content -->
-                    </div>
-                    <!-- /.kbDoc-com-box -->
-
-                    <div class="kbDoc-com-box">
-                        <div class="icon-container">
-                            <img src="img/home_support/rc10.png" alt="communinity-box">
-                        </div>
-                        <div class="kbDoc-com-box-content">
-                            <h3 class="title"><a href="forums.html">Integrate Quickly</a></h3>
-                            <p class="total-post">542 Posts</p>
-                        </div>
-                        <!-- /.kbDoc-com-box-content -->
-                    </div>
-                    <!-- /.kbDoc-com-box -->
-
-                    <div class="kbDoc-com-box">
-                        <div class="icon-container">
-                            <img src="img/home_support/rc12.png" alt="communinity-box">
-                        </div>
-                        <div class="kbDoc-com-box-content">
-                            <h3 class="title"><a href="forums.html">Integrate Quickly</a></h3>
-                            <p class="total-post">542 Posts</p>
-                        </div>
-                        <!-- /.kbDoc-com-box-content -->
-                    </div>
-                    <!-- /.kbDoc-com-box -->
-
-                    <div class="kbDoc-com-box">
-                        <div class="icon-container">
-                            <img src="img/home_support/rc13.png" alt="communinity-box">
-                        </div>
-                        <div class="kbDoc-com-box-content">
-                            <h3 class="title"><a href="forums.html">Go Global</a></h3>
-                            <p class="total-post">542 Posts</p>
-                        </div>
-                        <!-- /.kbDoc-com-box-content -->
-                    </div>
-                    <!-- /.kbDoc-com-box -->
-
-                    <div class="kbDoc-com-box">
-                        <div class="icon-container">
-                            <img src="img/home_support/rc14.png" alt="communinity-box">
-                        </div>
-                        <div class="kbDoc-com-box-content">
-                            <h3 class="title"><a href="#">Customize</a></h3>
-                            <p class="total-post">542 Posts</p>
-                        </div>
-                        <!-- /.kbDoc-com-box-content -->
-                    </div>
-                    <!-- /.kbDoc-com-box -->
-
-                    <div class="kbDoc-com-box">
-                        <div class="icon-container">
-                            <img src="img/home_support/rc15.png" alt="communinity-box">
-                        </div>
-                        <div class="kbDoc-com-box-content">
-                            <h3 class="title"><a href="forums.html">From Commissions</a></h3>
-                            <p class="total-post">542 Posts</p>
-                        </div>
-                        <!-- /.kbDoc-com-box-content -->
-                    </div>
-                    <!-- /.kbDoc-com-box -->
-                    <div class="kbDoc-com-box">
-                        <div class="icon-container">
-                            <img src="img/home_support/rc16.png" alt="communinity-box">
-                        </div>
-
-                        <div class="kbDoc-com-box-content">
-                            <h3 class="title"><a href="forums.html">Service Based</a></h3>
-                            <p class="total-post">542 Posts</p>
-                        </div>
-                        <!-- /.kbDoc-com-box-content -->
-                    </div>
-                    <!-- /.kbDoc-com-box -->
-                </div>
-                <!-- /.communities-boxes -->
-            </div>
-            <!-- /.collapse-wrap -->
-        </div>
-        <!-- /.more-communities -->
-    </div>
     <!-- /.container -->
 </section>
 <!-- /.related-communities -->
-
-
-<section class="funfact-area">
-    <div class="container">
-        <div class="smile has-animation">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="260px"
-                height="260px" xml:space="preserve">
-                <path stroke-linecap="round" class="path" fill="none" stroke="#fbe1db" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
-                    d="M100.000,200.000 C44.860,200.000 -0.000,155.139 -0.000,100.000 C-0.000,44.860 44.860,-0.001 100.000,-0.001 C155.141,-0.001 200.000,44.860 200.000,100.000 C200.000,155.139 155.140,200.000 100.000,200.000 ZM160.496,34.528 C144.586,19.816 123.327,10.811 100.000,10.811 C50.821,10.811 10.811,50.821 10.811,100.000 C10.811,114.898 14.488,128.952 20.975,141.310 C25.233,149.424 30.703,156.808 37.146,163.216 C53.281,179.259 75.502,189.188 100.000,189.188 C149.179,189.188 189.189,149.178 189.189,100.000 C189.189,86.241 186.056,73.201 180.468,61.553 C175.556,51.315 168.745,42.155 160.496,34.528 ZM99.809,155.403 C97.481,155.403 95.146,155.272 92.807,155.002 C74.591,152.901 57.749,142.414 47.755,126.949 L56.835,121.081 C65.094,133.861 79.004,142.528 94.047,144.262 C113.349,146.489 132.625,137.389 143.164,121.081 L152.245,126.949 C140.768,144.708 120.724,155.403 99.809,155.403 ZM134.235,88.513 C128.265,88.513 123.424,83.673 123.424,77.702 C123.424,71.731 128.265,66.891 134.235,66.891 C140.206,66.891 145.047,71.731 145.047,77.702 C145.047,83.673 140.206,88.513 134.235,88.513 ZM67.343,88.513 C61.372,88.513 56.532,83.673 56.532,77.702 C56.532,71.731 61.372,66.891 67.343,66.891 C73.313,66.891 78.154,71.731 78.154,77.702 C78.154,83.673 73.313,88.513 67.343,88.513 Z" />
-            </svg>
-        </div>
-        <!-- /.smile -->
-
-        <div class="section_title text-center">
-            <h2 class="h_title wow fadeInUp">
-                Over 1200+<br>
-                completed work & Still counting.
-            </h2>
-        </div>
-
-        <div class="funfact-boxes">
-            <div class="funfact-box text-center color-one wow fadeInRight" data-wow-delay="0.3s">
-                <div class="fanfact-icon">
-                    <img src="img/home_support/fun-fact-1.png" alt="funfact">
-                </div>
-                <div class="counter">842</div>
-                <h3 class="title">Users</h3>
-            </div>
-            <!-- /.funfact-box -->
-
-            <div class="funfact-box text-center color-two wow fadeInRight" data-wow-delay="0.5s">
-                <div class="fanfact-icon">
-                    <img src="img/home_support/fun-fact-2.png" alt="funfact">
-                </div>
-                <div class="counter">10,23</div>
-                <h3 class="title">Topics</h3>
-            </div>
-            <!-- /.funfact-box text-center -->
-
-            <div class="funfact-box text-center color-three wow fadeInRight" data-wow-delay="0.7s">
-                <div class="fanfact-icon">
-                    <img src="img/home_support/fun-fact-3.png" alt="funfact">
-                </div>
-                <div class="counter">196</div>
-                <h3 class="title">Forums</h3>
-            </div>
-            <!-- /.funfact-box text-center -->
-
-            <div class="funfact-box text-center color-four wow fadeInRight" data-wow-delay="0.9s">
-                <div class="fanfact-icon">
-                    <img src="img/home_support/fun-fact-4.png" alt="funfact">
-                </div>
-                <div class="counter">650</div>
-                <h3 class="title">Replies</h3>
-            </div>
-            <!-- /.funfact-box text-center -->
-
-            <div class="funfact-box text-center color-five wow fadeInRight" data-wow-delay="1.1s">
-                <div class="fanfact-icon">
-                    <img src="img/home_support/fun-fact-5.png" alt="funfact">
-                </div>
-                <div class="counter">364</div>
-                <h3 class="title">Tags</h3>
-            </div>
-            <!-- /.funfact-box text-center -->
-        </div>
-        <!-- /.fun-fact-boxes -->
-    </div>
-    <!-- /.container -->
-</section>
-<!-- /.funfact-area -->
 
 <section class="community-posts-area">
     <div class="container">
@@ -336,9 +127,9 @@
                 </div>
                 <div class="post-meta-wrapper">
                     <ul class="post-meta-info">
-                        <li><a href="#"><i class="fas fa-eye"></i>478</a></li>
-                        <li><a href="#"><i class="icon_chat_alt"></i>20</a></li>
-                        <li><a href="#"><i class="icon_like_alt"></i>5</a></li>
+                        <li><a href="#"><i class="icon_chat_alt"></i>@if ($question->jawaban == '') 0
+                            @else 1
+                        @endif</a></li>
                     </ul>
                 </div>
 
@@ -379,4 +170,53 @@
     <!-- /.container -->
 </section>
 <!-- /.communities -->
+
+<section class="funfact-area">
+    <div class="container">
+        <div class="smile has-animation">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="260px"
+                height="260px" xml:space="preserve">
+                <path stroke-linecap="round" class="path" fill="none" stroke="#fbe1db" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                    d="M100.000,200.000 C44.860,200.000 -0.000,155.139 -0.000,100.000 C-0.000,44.860 44.860,-0.001 100.000,-0.001 C155.141,-0.001 200.000,44.860 200.000,100.000 C200.000,155.139 155.140,200.000 100.000,200.000 ZM160.496,34.528 C144.586,19.816 123.327,10.811 100.000,10.811 C50.821,10.811 10.811,50.821 10.811,100.000 C10.811,114.898 14.488,128.952 20.975,141.310 C25.233,149.424 30.703,156.808 37.146,163.216 C53.281,179.259 75.502,189.188 100.000,189.188 C149.179,189.188 189.189,149.178 189.189,100.000 C189.189,86.241 186.056,73.201 180.468,61.553 C175.556,51.315 168.745,42.155 160.496,34.528 ZM99.809,155.403 C97.481,155.403 95.146,155.272 92.807,155.002 C74.591,152.901 57.749,142.414 47.755,126.949 L56.835,121.081 C65.094,133.861 79.004,142.528 94.047,144.262 C113.349,146.489 132.625,137.389 143.164,121.081 L152.245,126.949 C140.768,144.708 120.724,155.403 99.809,155.403 ZM134.235,88.513 C128.265,88.513 123.424,83.673 123.424,77.702 C123.424,71.731 128.265,66.891 134.235,66.891 C140.206,66.891 145.047,71.731 145.047,77.702 C145.047,83.673 140.206,88.513 134.235,88.513 ZM67.343,88.513 C61.372,88.513 56.532,83.673 56.532,77.702 C56.532,71.731 61.372,66.891 67.343,66.891 C73.313,66.891 78.154,71.731 78.154,77.702 C78.154,83.673 73.313,88.513 67.343,88.513 Z" />
+            </svg>
+        </div>
+        <!-- /.smile -->
+
+        <div class="section_title text-center">
+            <h2 class="h_title wow fadeInUp">
+                Statistik Pengunjung
+            </h2>
+        </div>
+
+        <div class="funfact-boxes">
+            <div class="funfact-box text-center color-one wow fadeInRight" data-wow-delay="0.3s">
+                <div class="counter">{{ $visitor_today }}</div>
+                <h3 class="title">Hari Ini</h3>
+            </div>
+            <!-- /.funfact-box -->
+
+            <div class="funfact-box text-center color-two wow fadeInRight" data-wow-delay="0.5s">
+                <div class="counter">{{ $visitor_month }}</div>
+                <h3 class="title">Bulan Ini</h3>
+            </div>
+            <!-- /.funfact-box text-center -->
+
+            <div class="funfact-box text-center color-three wow fadeInRight" data-wow-delay="0.7s">
+                <div class="counter">{{ $visitor_year }}</div>
+                <h3 class="title">Tahun Ini</h3>
+            </div>
+            <!-- /.funfact-box text-center -->
+
+            <div class="funfact-box text-center color-four wow fadeInRight" data-wow-delay="0.9s">
+                <div class="counter">{{ $visitor_all }}</div>
+                <h3 class="title">Total</h3>
+            </div>
+            <!-- /.funfact-box text-center -->
+        </div>
+        <!-- /.fun-fact-boxes -->
+    </div>
+    <!-- /.container -->
+</section>
+<!-- /.funfact-area -->
 @endsection

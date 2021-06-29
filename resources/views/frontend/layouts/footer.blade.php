@@ -10,7 +10,7 @@
             <div class="row">
                 <div class="col-lg-4 col-sm-6">
                     <div class="f_widget subscribe_widget wow fadeInUp">
-                        <a href="index.html" class="f_logo"><img src="{{ asset('frontend/img/logo.png') }}" alt=""></a>
+                        <a href="#" class="f_logo"><img src="{{ Voyager::image(setting('site.logo')) }}" height="70px" width="auto" alt=""></a>
                         <h4 class="c_head">Subscribe to our newsletter</h4>
                         <form action="#" class="footer_subscribe_form">
                             <input type="email" placeholder="Email" class="form-control">

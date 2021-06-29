@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg menu_one" id="sticky">
     <div class="container">
         <a class="navbar-brand" href="index.html">
-            <img src="img/logo.png" srcset="img/logo-2x.png 2x" alt="logo">
+            <img src="{{ Voyager::image(setting('site.logo')) }}" srcset="{{ Voyager::image(setting('site.logo')) }} 2x" alt="logo" height="50px" width="auto">
         </a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -24,7 +24,7 @@
             <ul class="navbar-nav menu ml-auto">
                 {{ menu('frontend', 'frontend.layouts.nav') }}
             </ul>
-            <a class="nav_btn" href="signin.html"><i class="icon_profile"></i>Log In</a>
+            <a class="nav_btn" href="{{ route('voyager.login') }}"><i class="icon_profile"></i>Log In</a>
         </div>
     </div>
 </nav>
