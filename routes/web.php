@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\frontend\berandaController;
 use App\Http\Controllers\frontend\qnaController;
 use App\Http\Controllers\frontend\perkebController;
+use App\Http\Controllers\frontend\sopController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,4 +25,5 @@ Route::get('/tanyajawab/{id}', [qnaController::class, 'show'])->name('frontend.q
 Route::get('/tanya', [qnaController::class, 'tanya'])->name('frontend.qna.tanya');
 Route::post('/tanyaaction', [qnaController::class, 'store'])->name('frontend.qna.store');
 Route::get('/peraturankebijakan', [perkebController::class, 'index'])->name('frontend.perkeb');
+Route::get('/sop', [sopController::class, 'index'])->name('frontend.sop');
 
